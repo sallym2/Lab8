@@ -33,7 +33,7 @@ public class EmployeeDatabase {
      * @param employee the employee.
      * @return the manager.
      */
-    Employee findManager(final Employee employee) {
+    protected Employee findManager(final Employee employee) {
         Employee manager = null;
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getName() == employee.getManager()) {
